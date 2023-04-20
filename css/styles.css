@@ -285,6 +285,7 @@ button {
 
 @media screen and (max-width: 767px) {
   .header-box {
+    min-width: 320px;
     max-width: 428px;
   }
 
@@ -327,7 +328,6 @@ button {
     z-index: 100;
     transform: translateX(100%);
     transition: var(--is-transition-animation);
-    display: block;
     overflow: scroll;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -338,6 +338,7 @@ button {
   }
 
   .mobile-list-navigation .mobile-navigation-item {
+    align-items: start;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -347,6 +348,15 @@ button {
     color: var(--primary-color);
   }
 
+  .mobile-list {
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+  
+  }
+ 
   .menu-item-mobile {
     margin-top: 40px;
   }
@@ -354,10 +364,6 @@ button {
   .mobile-navigation-item:hover,
   .mobile-navigation-item.page-status {
     color: var(--btn-bgc-hero-secondry);
-  }
-
-  .mobile-contact {
-    margin-top: 284px;
   }
 
   .mobile-contact-item {
@@ -455,8 +461,6 @@ button {
 }
 
 .hero-blok {
-  padding-top: 188px;
-  padding-bottom: 188px;
   background-color: var(--primary-color);
   background-size: cover;
   background-position: center;
@@ -467,13 +471,17 @@ button {
 
 @media screen and (max-width: 767px) {
   .hero-blok {
+    padding-top: 112px;
+    padding-bottom: 112px;}
+
+  .hero-blok {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/page1/hero-section/mobile/mobile-hero.jpg);
     min-width: 320px;
-    width: 428px;
+    max-width: 428px;
   }
 
   .hero-blok .primary-heading {
@@ -485,12 +493,17 @@ button {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--white-color);
-    width: 320px;
+    max-width: 320px;
     margin: auto;
   }
+
 }
 
 @media screen and (min-width: 768px) {
+  .hero-blok {
+    padding-top: 112px;
+    padding-bottom: 112px;}
+
   .hero-blok {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -510,6 +523,10 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+  .hero-blok {
+    padding-top: 188px;
+    padding-bottom: 188px;}
+
   .hero-blok {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -591,13 +608,22 @@ button {
 @media screen and (max-width: 767px) {
   .benefits-text {
     max-width: 396px;
-    margin-bottom: 72px;
     margin-left: auto;
     margin-right: auto;
   }
 
+  .benefits-text:not(:last-child) {
+     margin-bottom: 72px;
+  }
+
   .antenna-container {
     display: none;
+  }
+
+  .sec-one {
+    min-width: 320px;
+    max-width: 428px;
+    margin: auto;
   }
 }
 
@@ -727,8 +753,6 @@ button {
 
 .sec-three {
   background-color: var(--secondary-color);
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .employees {
@@ -792,8 +816,10 @@ button {
 
 @media screen and (max-width: 767px) {
   .sec-three {
+    padding-top: 96px;
+    padding-bottom: 96px;
     min-width: 320px;
-    width: 428px;
+    max-width: 428px;
     margin: auto;
   }
 
@@ -810,6 +836,12 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+
+  .sec-three {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
   .employees-block {
     display: flex;
     flex-wrap: wrap;
@@ -826,6 +858,8 @@ button {
 
 @media screen and (min-width: 1158px) {
   .sec-three {
+    padding-top: 120px;
+    padding-bottom: 120px;
     max-width: 1440px;
     margin: auto;
   }
@@ -856,11 +890,6 @@ button {
 
 /* =======SECTION THREE====== */
 /* ========Company block (Section 4)======== */
-
-.client-block {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 
 .client-title {
   margin-left: auto;
@@ -909,8 +938,17 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .client-list {
+  .client-block {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .client-container {
+    min-width: 320px;
     max-width: 428px;
+  }
+  .client-list {
+    min-width: 320px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -920,6 +958,11 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .client-block {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
   .client-list {
     max-width: 768px;
     display: flex;
@@ -931,6 +974,11 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+  .client-block {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   .client-list {
     max-width: 1158px;
   }
@@ -950,8 +998,6 @@ button {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--primary-color);
-  padding-top: 96px;
-  padding-bottom: 96px;
 }
 
 .end-page .logo.link {
@@ -981,10 +1027,6 @@ button {
   text-align: left;
   color: var(--white-color);
   margin-bottom: 16px;
-}
-
-.footer-social {
-  margin-right: 80px;
 }
 
 .social-footer-list {
@@ -1094,9 +1136,14 @@ button {
 }
 
 @media screen and (max-width: 767px) {
+  .end-page{
+  padding-top: 96px;
+  padding-bottom: 96px;
+  }
+
   .end-page {
     min-width: 320px;
-    width: 428px;
+    max-width: 428px;
   }
 
   .footer-list {
@@ -1139,15 +1186,21 @@ button {
 @media screen and (min-width: 768px) {
   .end-page {
     max-width: 768px;
-    padding-left: 93px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   
+  .footer-logo-text .logo.link {
+    display: block;
+    margin-bottom: 16px;
+  }
+
   .footer-list {
- 
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
+    width: 582px;
   }
 
   .label-mail {
@@ -1163,8 +1216,13 @@ button {
 @media screen and (min-width: 1158px) {
   .end-page {
     max-width: 1440px;
-    padding-left: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
+
+  .footer-social {
+    margin-right: 80px;
+    }
 
   .footer-text {
     margin-top: 16px;
@@ -1227,8 +1285,6 @@ button {
 /* ========button portfolio html========= */
 
 /* ====== PORTFOLIO PAGE =======*/
-
-
 
 .card-pf:nth-child(3n) {
   margin-right: 0;
@@ -1380,6 +1436,71 @@ button {
 /* ====== PORTFOLIO PAGE =======*/
 /* =========MODAL WINDOW========= */
 
+@media screen and (max-width: 767px)
+{
+  .backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  .backdrop {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    overflow: scroll;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modal {
+    position: absolute;
+    width: 100%;
+    max-width: 408px;
+    min-height: 584px;
+    background-color: #fcfcfc;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 72px 24px 24px 24px;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 8px 8px 8px 8px;
+    background: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: var(--is-transition-bg-color);
+    fill: #2e2f42;
+    ;
+  }
+  
+  .button-closed {
+    transition: var(--is-transition-fill);
+  }
+  
+  .modal-close:hover,
+  .modal-close:focus {
+    background-color: #404bbf;
+    fill: #ffffff;
+  }
+}
+@media screen and (min-width: 768px) {
+
 .backdrop {
   display: block;
   position: fixed;
@@ -1402,12 +1523,12 @@ button {
 
 .modal {
   position: absolute;
-  width: 408px;
+  min-width: 408px;
   height: 584px;
   background-color: #fcfcfc;
-  top: 50%;
+  top: 80px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1439,7 +1560,7 @@ button {
   background-color: #404bbf;
   fill: #ffffff;
 }
-
+}
 /* =========MODAL WINDOW========= */
 /* ============ MODAL FORM ============ */
 
@@ -1529,6 +1650,9 @@ button {
 .policy-style-text {
   color: var(--btn-bgc-hero-primary);
 }
+
+.policy-text {display: flex;
+flex-wrap: wrap;}
 
 .form-policy {
   display: flex;
