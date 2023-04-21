@@ -252,7 +252,7 @@ button {
   }
 
   .header-box {
-    max-width: 768px;
+    max-width: 1440px;
   }
 }
 
@@ -276,9 +276,6 @@ button {
     margin-right: 40px;
   }
 
-  .header-box {
-    max-width: 1440px;
-  }
 }
 
 /* Mobile menu */
@@ -286,7 +283,6 @@ button {
 @media screen and (max-width: 767px) {
   .header-box {
     min-width: 320px;
-    max-width: 428px;
   }
 
   .mobile-open {
@@ -354,7 +350,6 @@ button {
     display: flex; 
     flex-direction: column;
     justify-content: space-between;
-  
   }
  
   .menu-item-mobile {
@@ -419,6 +414,16 @@ button {
   }
 }
 
+@media screen and (max-width: 400px) {
+.mobile-contact-phone {
+  font-size: 28px;
+}
+
+.mobile-social-list {
+  gap: 30px;
+}
+
+}
 /* Mobile menu */
 
 /* ==========HEADER========== */
@@ -583,6 +588,7 @@ button {
 }
 
 .sec-one {
+  min-width: 320px;
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -621,8 +627,6 @@ button {
   }
 
   .sec-one {
-    min-width: 320px;
-    max-width: 428px;
     margin: auto;
   }
 }
@@ -816,10 +820,9 @@ button {
 
 @media screen and (max-width: 767px) {
   .sec-three {
+    min-width: 320px;
     padding-top: 96px;
     padding-bottom: 96px;
-    min-width: 320px;
-    max-width: 428px;
     margin: auto;
   }
 
@@ -851,7 +854,6 @@ button {
   }
 
   .sec-three {
-    max-width: 768px;
     margin: auto;
   }
 }
@@ -860,7 +862,6 @@ button {
   .sec-three {
     padding-top: 120px;
     padding-bottom: 120px;
-    max-width: 1440px;
     margin: auto;
   }
 }
@@ -945,10 +946,10 @@ button {
 
   .client-container {
     min-width: 320px;
-    max-width: 428px;
+    /* max-width: 428px; */
   }
   .client-list {
-    min-width: 320px;
+   
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1143,7 +1144,6 @@ button {
 
   .end-page {
     min-width: 320px;
-    max-width: 428px;
   }
 
   .footer-list {
@@ -1185,7 +1185,6 @@ button {
 }
 @media screen and (min-width: 768px) {
   .end-page {
-    max-width: 768px;
     padding-top: 96px;
     padding-bottom: 96px;
   }
@@ -1460,7 +1459,7 @@ button {
 
   .modal {
     position: absolute;
-    width: 100%;
+    width: calc(100% - 30px);
     max-width: 408px;
     min-height: 584px;
     background-color: #fcfcfc;
@@ -1651,8 +1650,10 @@ button {
   color: var(--btn-bgc-hero-primary);
 }
 
-.policy-text {display: flex;
-flex-wrap: wrap;}
+.policy-text {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .form-policy {
   display: flex;
